@@ -187,10 +187,7 @@ class evolve:
         print "-"*50
 
     def start_evolving(self):
-        #each iteration, sort the population by cost and mate the top 2 members and put the children in back in the list by removing the bottom 2 members(highest cost)
-        #and call this function recursively
-        #print "before loop"
-        #self.print_str(self.population,0,True)
+        #each generation, sort the population by cost and mate the top 2 members and put the children in back in the list by removing the bottom 2 members(highest cost)
         while self.max_generation > 0:
             self.sort_by_cost()
             childrenAB = self.population[0].mate(self.population[1].get_list())
