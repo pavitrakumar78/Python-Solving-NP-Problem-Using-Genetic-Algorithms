@@ -143,13 +143,13 @@ class evolve:
 
     def __init__(self,point_list,max_generation):
         self.final = []
-        #print self.final.get_str() ,"IS THE FINAL"
         self.start = chromozome()
 
         self.population = []
 
-        self.max_generation =max_generation
+        self.max_generation = max_generation
         self.point_list = point_list
+        
         self.populate()
 
     def length(self,p1,p2):
@@ -160,7 +160,6 @@ class evolve:
         gene_copy = copy.deepcopy(gene)
         gene_copy.append(max(gene)+1)
         gene_copy = [0]+gene_copy
-        #print "gene:",gene_copy
         cost = 0
         for i in range(len(gene_copy)-1):
             cost += self.length(self.point_list[gene_copy[i]],self.point_list[gene_copy[i+1]])
@@ -168,7 +167,6 @@ class evolve:
 
     def populate(self,n=30):
         #fill the population randomly
-        #self.population.append(self.start)
         while n > 1:
             self.population.append(chromozome())
             n-=1
@@ -196,7 +194,6 @@ class evolve:
 
             for index in range(len(self.population)):
                 #mutate it and check the cost
-                #print "->",self.population[index]
                 self.population[index].mutate(0.15) #mutate with a % chance
             self.max_generation -= 1
         print "lowest cost path after n generations:",[0]+self.population[0].get_list()+[19]
