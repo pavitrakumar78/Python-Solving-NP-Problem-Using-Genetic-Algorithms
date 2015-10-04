@@ -211,3 +211,10 @@ actual_path = [point_list[x] for x in sol]
 
 print "near-optimal solution:",sol,
 print "cost:",e.calculate_fitness(sol)
+
+
+#Plotting the solution on a 2d graph
+actual_path_x = [pair[0] for pair in actual_path]
+actual_path_y = [pair[1] for pair in actual_path]
+plt.plot(actual_path_x, actual_path_y, marker="o", markerfacecolor="r")
+plt.show()
