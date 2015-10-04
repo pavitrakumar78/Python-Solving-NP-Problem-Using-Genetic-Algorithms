@@ -4,9 +4,8 @@ Exploring different ways of solving NP-Hard problems using genetic algorithms.
 [This is a repo of few experiments by me trying to figure out different/better ways of crossovers,mutations and representation of inputs]  
 
 ##Travelling Sales Man Problem  
-
-Dynamic programming solution runtime: O((n^2)*(2^n)) 
-Genetic programming solution runtime: O(m*(nlogn)) (where m is the maximum number of generations)  
+Dynamic programming solution runtime: O((n^2)*(2^n))  
+Genetic Programming solution runtime: O(m*(nlogn)) (where m is the maximum number of generations)   
 
 For n = 20 points, Dynamic Porgramming solutions takes about 2-3 mins to run whereas the Genetic Programming solutions only takes about a few seconds and gives a solution that is + or - 50 of the optimal solution.
 
