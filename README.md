@@ -3,7 +3,7 @@
 Exploring different ways of solving NP-Hard problems using genetic algorithms.
 [This is a repo of few experiments by me trying to figure out different/better ways of crossovers,mutations and representation of inputs]  
 
-##Travelling Salesman Problem  
+## Travelling Salesman Problem  
 Dynamic programming solution runtime: O((n^2)*(2^n))  
 Genetic Programming solution runtime: O(m*(nlogn)) (where m is the maximum number of generations)   
 
