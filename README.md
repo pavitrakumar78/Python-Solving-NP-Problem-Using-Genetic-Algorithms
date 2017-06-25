@@ -1,7 +1,7 @@
 # Python Solving NP Problems Using Genetic Algorithm
 
 Exploring different ways of solving NP-Hard problems using genetic algorithms.
-[This is a repo of few experiments by me trying to figure out different/better ways of crossovers,mutations and representation of inputs]  
+[This is a repo of few experiments done to figure out different/better ways of crossovers,mutations and representation of inputs in genetic algorithms]  
 
 ## Travelling Salesman Problem  
 Dynamic programming solution runtime: O((n^2)*(2^n))  
